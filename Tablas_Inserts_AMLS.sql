@@ -125,13 +125,17 @@ INSERT INTO PROYECTO_productos(codigo, categoria, usuario_crea, usuario_modifica
 (6, 2, 4, 4, to_date('25-03-2023','dd-mm-yyyy'), to_date('25-03-2023','dd-mm-yyyy'), 'Funko Son Goku', './ImagenesProyecto/ProductoCoku.png' , 14.95, 21, 'El Saiyan mas poderoso');
 INSERT INTO PROYECTO_productos(codigo, categoria, usuario_crea, usuario_modifica, f_creac, f_ult_modificacion, nombre,imagen, precio, IVA,  descrip_caract) VALUES
 (7, 1, 4, 4, to_date('17-04-2023','dd-mm-yyyy'), to_date('17-04-2023','dd-mm-yyyy'), 'Funko Loki', './ImagenesProyecto/ProductoLoki.png' , 19.95, 21, 'El villado más querido');
-
+INSERT INTO PROYECTO_productos(codigo, categoria, usuario_crea, usuario_modifica, f_creac, f_ult_modificacion, nombre, imagen, precio, IVA,  descrip_caract) VALUES
+(8, 1, 1, 1, to_date('21-01-2022','dd-mm-yyyy'), to_date('11-11-2022','dd-mm-yyyy'), 'Funko Groot ', './ImagenesProyecto/ProductoGroot.png' ,14.95, 21, 'Guardianes de la galaxia');
 
 
 INSERT INTO PROYECTO_direccion(numero, usuario, direccion, poblacion, c_postal, c_autonoma) VALUES
 (1, 2, 'C/Velazquez Nº2', 'Alicante', '03005', 'CATALUÑA');
 INSERT INTO PROYECTO_direccion(numero, usuario, direccion, poblacion, c_postal, c_autonoma) VALUES
 (2, 3, 'C/Aragon Nº70', 'Elda', '03600', 'MADRID');
+INSERT INTO PROYECTO_direccion(numero, usuario, direccion, poblacion, c_postal, c_autonoma) VALUES
+(3, 2, 'C/Alfonso Nº3', 'Alicante', '03005', 'CATALUÑA');
+
 
 INSERT INTO PROYECTO_pedido(codigo, usuario, numero_direc, fecha,  tipo_pago) VALUES
 (1, 2, 1 , to_date('12-01-2023','dd-mm-yyyy') ,  'TARJETA');
@@ -146,9 +150,9 @@ INSERT INTO PROYECTO_linea_pedido(producto, pedido, cantidad, precio_producto) V
 
 
 INSERT INTO PROYECTO_factura(codigo, pedido, numero_direc, fecha) VALUES
-(1, 2, 1,1, to_date('12-01-2023','dd-mm-yyyy'));
+(1, 1,1, to_date('12-01-2023','dd-mm-yyyy'));
 INSERT INTO PROYECTO_factura(codigo, pedido, numero_direc ,fecha) VALUES
-(2, 3, 2,2, to_date('05-08-2022','dd-mm-yyyy'));
+(2, 2,2, to_date('05-08-2022','dd-mm-yyyy'));
 
 
 /* b)Realiza 3 actualizaciones al menos.
